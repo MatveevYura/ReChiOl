@@ -20,9 +20,14 @@
 
 [class*=_icon-]:before {
   display: flex;
-  justify-content: center;
-  font-size: 2.5rem;
-  color: #a11b1b;
+}
+
+._icon-droplet:before {
+  content: "\e90b";
+}
+
+._icon-sun:before {
+  content: "\e9d4";
 }
 
 ._icon-cancel-circle:before {
@@ -350,6 +355,17 @@ h6 {
   font-size: 1.875rem;
   line-height: 1.25;
   font-weight: 600;
+  margin: 0 10px;
+}
+@media (max-width: 61.99875em) {
+  .problem__title {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 47.99875em) {
+  .problem__title {
+    font-size: 1.25rem;
+  }
 }
 .problem__items {
   margin-top: 2.5rem;
@@ -357,25 +373,310 @@ h6 {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  padding-bottom: 2.5rem;
+}
+@media (max-width: 47.99875em) {
+  .problem__items {
+    margin-top: 1.25rem;
+  }
 }
 .problem__item {
   text-align: center;
+}
+@media (max-width: 1118px) {
+  .problem__item {
+    margin-top: 1.25rem;
+  }
+}
+.problem__image-group {
+  position: relative;
 }
 .problem__image {
   border: #fff 4px solid;
   border-radius: 50%;
   width: 15.9375rem;
 }
+@media (max-width: 29.99875em) {
+  .problem__image {
+    width: 15rem;
+  }
+}
 .problem__text {
   margin-top: 2.5rem;
+  font-size: 1.875rem;
 }
-
-.test {
-  position: relative;
+@media (max-width: 61.99875em) {
+  .problem__text {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 47.99875em) {
+  .problem__text {
+    font-size: 1.5rem;
+  }
 }
 
 ._icon-cancel-circle {
   position: absolute;
   bottom: -20px;
   left: 42%;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: #f14242;
+}
+
+.advantage {
+  position: relative;
+  margin-top: 3.75rem;
+  padding-bottom: 3.75rem;
+}
+.advantage__img-texture {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  transform: scaleX(-1);
+}
+.advantage__title {
+  text-align: center;
+  font-size: 1.875rem;
+  line-height: 1.25;
+  font-weight: 600;
+  margin: 0 10px;
+}
+@media (max-width: 61.99875em) {
+  .advantage__title {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 47.99875em) {
+  .advantage__title {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 29.99875em) {
+  .advantage__title {
+    font-size: 1.125rem;
+  }
+}
+.advantage__img-block {
+  margin: 3.75rem 1.25rem 0 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 61.99875em) {
+  .advantage__img-block {
+    flex-direction: column;
+  }
+}
+@media (max-width: 47.99875em) {
+  .advantage__img-block {
+    margin: 2.5rem 1.25rem 0 1.25rem;
+  }
+}
+@media (max-width: 29.99875em) {
+  .advantage__img-block {
+    margin: 1.25rem 0.625rem 0 0.625rem;
+  }
+}
+.advantage__items {
+  max-width: 60%;
+}
+@media (max-width: 61.99875em) {
+  .advantage__items {
+    max-width: 90%;
+    margin-top: 1.875rem;
+  }
+}
+.advantage__item {
+  font-size: 1.75rem;
+  line-height: 1.1666666667;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.advantage__item:last-child {
+  margin: 20px 0px 0px 0px;
+}
+.advantage__item:last-child::before {
+  font-size: 2.25rem;
+  color: #f9d71c;
+}
+.advantage__item:first-child::before {
+  font-size: 2.25rem;
+  color: #00ffff;
+}
+@media (max-width: 47.99875em) {
+  .advantage__item {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 29.99875em) {
+  .advantage__item {
+    font-size: 1.125rem;
+  }
+}
+
+.compound {
+  background: -webkit-linear-gradient(0deg, #fee1e9, #edd5e1, #d4eaee);
+  background: linear-gradient(0deg, #fee1e9, #edd5e1, #d4eaee);
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+}
+@media (max-width: 47.99875em) {
+  .compound {
+    padding-top: 2.5rem;
+  }
+}
+@media (max-width: 29.99875em) {
+  .compound {
+    padding-top: 1.25rem;
+  }
+}
+.compound__block {
+  display: flex;
+  padding: 0 1.25rem;
+  align-items: start;
+}
+@media (max-width: 61.99875em) {
+  .compound__block {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.compound__img {
+  width: 90%;
+}
+@media (max-width: 61.99875em) {
+  .compound__img {
+    width: 50%;
+  }
+}
+.compound__text {
+  font-size: 1.5rem;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media (max-width: 47.99875em) {
+  .compound__text {
+    text-align: center;
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 29.99875em) {
+  .compound__text {
+    font-size: 1.125rem;
+  }
+}
+.compound__gif {
+  align-self: center;
+  border: 5px #fff solid;
+}
+@media (max-width: 47.99875em) {
+  .compound__gif {
+    display: none;
+  }
+}
+
+.howUse {
+  background: -webkit-linear-gradient(180deg, #fee1e9, #8592d8, #aecd46);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(180deg, #fee1e9, #8592d8, #aecd46);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.howUse__title {
+  color: #593257;
+  text-shadow: 0 0 5px rgba(71, 67, 67, 0.438);
+  padding-top: 2.5rem;
+  text-align: center;
+  font-size: 2.375rem;
+  line-height: 1.1176470588;
+  font-weight: 600;
+}
+@media (max-width: 47.99875em) {
+  .howUse__title {
+    font-size: 1.875rem;
+    line-height: 1.6666666667;
+  }
+}
+@media (max-width: 573px) {
+  .howUse__title {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+}
+@media (max-width: 29.99875em) {
+  .howUse__title {
+    font-size: 1.25rem;
+    line-height: 1;
+  }
+}
+.howUse__block {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 40px;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.howUse__item {
+  text-align: center;
+  max-width: 18.75rem;
+}
+@media (max-width: 61.99875em) {
+  .howUse__item {
+    max-width: 2.8125%rem;
+  }
+}
+@media (max-width: 29.99875em) {
+  .howUse__item {
+    min-width: 18.75rem;
+  }
+}
+.howUse__ico {
+  text-align: center;
+  position: relative;
+}
+.howUse__circle {
+  margin-right: auto;
+  margin-left: auto;
+  background: #fff;
+  border-radius: 50%;
+  width: 12.5rem;
+  height: 12.5rem;
+  border: 5px solid #4D354D;
+}
+.howUse__svg {
+  fill: #4D354D;
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+}
+.howUse__num {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 3.75rem;
+  margin-left: 0.625rem;
+  color: #4c6e26;
+  font-weight: 600;
+}
+.howUse__text {
+  margin-top: 1.875rem;
+  font-size: 1.375rem;
+  line-height: 1.2222222222;
+  margin-bottom: 2.5rem;
+}
+@media (max-width: 47.99875em) {
+  .howUse__text {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 29.99875em) {
+  .howUse__text {
+    font-size: 1.125rem;
+  }
 }
