@@ -137,9 +137,30 @@ align-self: center;
   // .problem__block
   &__block {
     padding-top: rem(40);
+    padding-bottom: rem(40);
+  }
+  &__title{
+    margin-bottom: rem(40);
+    text-align: center;
+    font-size: rem(38);
+    line-height: math.div(38 , 34);
+    font-weight: 600;
+    @media (max-width:$mobile){
+       font-size: rem(30);
+       line-height: math.div(30 , 18); 
+       margin-bottom: rem(20);
+    }
+    @media (max-width:573px){
+      font-size: rem(24);
+      line-height: math.div(22 , 22);
+   }
+   @media (max-width:$mobileSmall){
+     font-size: rem(22);
+     line-height: math.div(20 , 20); 
+   }
   }
   // .problem__title
-  &__title {
+  &__subTitle {
     text-align: center;
     font-size: rem(30);
     line-height: math.div(30 , 24);
@@ -159,20 +180,24 @@ align-self: center;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    padding-bottom: rem(40);
-    @media (max-width:$mobile){
+    @media (max-width:$tablet){
        margin-top: rem(20); 
+    }
+    @media (max-width:$mobileSmall){
+       margin-top: rem(10); 
     }
   }
   // .problem__item
   &__item {
     text-align: center;
-    @media (max-width:1118px){
-      margin-top: rem(20);
-    }
+    
   }
   &__image-group{
     position: relative;
+    svg{
+      width: rem(150);
+      height: rem(150);
+    }
   }
   // .problem__text
   &__text {
@@ -192,8 +217,8 @@ align-self: center;
 
 .advantage {
   position: relative;
-  margin-top: rem(60);
-  padding-bottom: rem(60);
+  padding-top: rem(40);
+  padding-bottom: rem(40);
   // .advantage__img-texture
   &__img-texture {
     position: absolute;
@@ -205,8 +230,28 @@ align-self: center;
   // .advantage__block
   &__block {
   }
+  &__title{
+    margin-bottom: rem(40);
+    text-align: center;
+    font-size: rem(38);
+    line-height: math.div(38 , 34);
+    font-weight: 600;
+    @media (max-width:$mobile){
+       font-size: rem(30);
+       line-height: math.div(30 , 18); 
+       margin-bottom: rem(20);
+    }
+    @media (max-width:573px){
+      font-size: rem(24);
+      line-height: math.div(22 , 22);
+   }
+   @media (max-width:$mobileSmall){
+     font-size: rem(22);
+     line-height: math.div(20 , 20); 
+   }
+  }
   // .advantage__title
-  &__title {
+  &__subTitle {
     text-align: center;
     font-size: rem(30);
     line-height: math.div(30 , 24);
@@ -281,13 +326,30 @@ align-self: center;
 .compound {
   background: -webkit-linear-gradient(0deg, #fee1e9,#edd5e1,#d4eaee);
   background: linear-gradient(0deg, #fee1e9,#edd5e1,#d4eaee);
-  padding-top: rem(60);
-  padding-bottom: rem(60);
+  padding-top: rem(40);
+  padding-bottom: rem(40);
   @media (max-width:$mobile){
-    padding-top: rem(40); 
-  }
-  @media (max-width:$mobileSmall){
     padding-top: rem(20); 
+  }
+  &__title{
+    margin-bottom: rem(40);
+    text-align: center;
+    font-size: rem(38);
+    line-height: math.div(38 , 34);
+    font-weight: 600;
+    @media (max-width:$mobile){
+       font-size: rem(30);
+       line-height: math.div(30 , 18); 
+       margin-bottom: rem(20);
+    }
+    @media (max-width:573px){
+      font-size: rem(24);
+      line-height: math.div(22 , 22);
+   }
+   @media (max-width:$mobileSmall){
+     font-size: rem(22);
+     line-height: math.div(20 , 20); 
+   }
   }
   // .compound__block
   &__block {
@@ -333,12 +395,14 @@ align-self: center;
 //========================================================================================================================================================
 
 .howUse {
-  background: -webkit-linear-gradient(180deg, #fee1e9,#8592d8,#aecd46);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(180deg, #fee1e9,#8592d8,#aecd46);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+  padding-top: rem(40);
+  padding-bottom: rem(40);
+  background: -webkit-linear-gradient(180deg, #fee1e9,#d4eaee);
+  /* Chrome 10-25, Safari 5.1-6 */                          
+  background: linear-gradient(180deg, #fee1e9,#d4eaee);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
   // .howUse__title
-  &__title {
-    color: #593257;
-    text-shadow: 0 0 5px rgba(71, 67, 67, 0.438);
-    padding-top: rem(40);
+  &__title{
+    margin-bottom: rem(40);
     text-align: center;
     font-size: rem(38);
     line-height: math.div(38 , 34);
@@ -346,19 +410,19 @@ align-self: center;
     @media (max-width:$mobile){
        font-size: rem(30);
        line-height: math.div(30 , 18); 
+       margin-bottom: rem(20);
     }
     @media (max-width:573px){
       font-size: rem(24);
       line-height: math.div(22 , 22);
    }
    @media (max-width:$mobileSmall){
-     font-size: rem(20);
+     font-size: rem(22);
      line-height: math.div(20 , 20); 
    }
   }
   // .howUse__block
   &__block {
-    margin-top: rem(40);
     display: flex;
     gap: 40px;
     justify-content: space-around;
@@ -426,8 +490,28 @@ align-self: center;
 //========================================================================================================================================================
 
 .choise {
-  margin-top: rem(60);
-  margin-bottom: rem(40);
+  padding-top: rem(40);
+  padding-bottom: rem(40);
+  &__title{
+    margin-bottom: rem(40);
+    text-align: center;
+    font-size: rem(38);
+    line-height: math.div(38 , 34);
+    font-weight: 600;
+    @media (max-width:$mobile){
+       font-size: rem(30);
+       line-height: math.div(30 , 18); 
+       margin-bottom: rem(20);
+    }
+    @media (max-width:573px){
+      font-size: rem(24);
+      line-height: math.div(22 , 22);
+   }
+   @media (max-width:$mobileSmall){
+     font-size: rem(22);
+     line-height: math.div(20 , 20); 
+   }
+  }
   // .choise__block
   &__block {
     margin: 0 10px;
@@ -484,13 +568,31 @@ align-self: center;
 
 .review {
   background: url('@img/reviewbg.jpg') 0 0 no-repeat;
+  padding-top: rem(40);
+  padding-bottom: rem(40);
+  &__mainTitle{
+    margin-bottom: rem(40);
+    text-align: center;
+    font-size: rem(38);
+    line-height: math.div(38 , 34);
+    font-weight: 600;
+    @media (max-width:$mobile){
+       font-size: rem(30);
+       line-height: math.div(30 , 18); 
+       margin-bottom: rem(20);
+    }
+    @media (max-width:573px){
+      font-size: rem(24);
+      line-height: math.div(22 , 22);
+   }
+   @media (max-width:$mobileSmall){
+     font-size: rem(22);
+     line-height: math.div(20 , 20); 
+   }
+  }
   // .review__block
   &__block {
-    padding: rem(80) rem(20) rem(60) rem(20);
-    @media (max-width:$mobile){
-    padding: rem(40) rem(20) rem(40) rem(20);
-        
-    }
+    padding: 0 rem(20);
   }
   // .review__slider
   &__slider {

@@ -403,8 +403,35 @@ h6 {
 }
 .problem__block {
   padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 .problem__title {
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-size: 2.375rem;
+  line-height: 1.1176470588;
+  font-weight: 600;
+}
+@media (max-width: 47.99875em) {
+  .problem__title {
+    font-size: 1.875rem;
+    line-height: 1.6666666667;
+    margin-bottom: 1.25rem;
+  }
+}
+@media (max-width: 573px) {
+  .problem__title {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+}
+@media (max-width: 29.99875em) {
+  .problem__title {
+    font-size: 1.375rem;
+    line-height: 1;
+  }
+}
+.problem__subTitle {
   text-align: center;
   font-size: 1.875rem;
   line-height: 1.25;
@@ -412,12 +439,12 @@ h6 {
   margin: 0 10px;
 }
 @media (max-width: 61.99875em) {
-  .problem__title {
+  .problem__subTitle {
     font-size: 1.5rem;
   }
 }
 @media (max-width: 47.99875em) {
-  .problem__title {
+  .problem__subTitle {
     font-size: 1.25rem;
   }
 }
@@ -427,23 +454,26 @@ h6 {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  padding-bottom: 2.5rem;
 }
-@media (max-width: 47.99875em) {
+@media (max-width: 61.99875em) {
   .problem__items {
     margin-top: 1.25rem;
+  }
+}
+@media (max-width: 29.99875em) {
+  .problem__items {
+    margin-top: 0.625rem;
   }
 }
 .problem__item {
   text-align: center;
 }
-@media (max-width: 1118px) {
-  .problem__item {
-    margin-top: 1.25rem;
-  }
-}
 .problem__image-group {
   position: relative;
+}
+.problem__image-group svg {
+  width: 9.375rem;
+  height: 9.375rem;
 }
 .problem__text {
   margin-top: 0.625rem;
@@ -462,8 +492,8 @@ h6 {
 
 .advantage {
   position: relative;
-  margin-top: 3.75rem;
-  padding-bottom: 3.75rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 .advantage__img-texture {
   position: absolute;
@@ -473,6 +503,32 @@ h6 {
   transform: scaleX(-1);
 }
 .advantage__title {
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-size: 2.375rem;
+  line-height: 1.1176470588;
+  font-weight: 600;
+}
+@media (max-width: 47.99875em) {
+  .advantage__title {
+    font-size: 1.875rem;
+    line-height: 1.6666666667;
+    margin-bottom: 1.25rem;
+  }
+}
+@media (max-width: 573px) {
+  .advantage__title {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+}
+@media (max-width: 29.99875em) {
+  .advantage__title {
+    font-size: 1.375rem;
+    line-height: 1;
+  }
+}
+.advantage__subTitle {
   text-align: center;
   font-size: 1.875rem;
   line-height: 1.25;
@@ -480,17 +536,17 @@ h6 {
   margin: 0 10px;
 }
 @media (max-width: 61.99875em) {
-  .advantage__title {
+  .advantage__subTitle {
     font-size: 1.5rem;
   }
 }
 @media (max-width: 47.99875em) {
-  .advantage__title {
+  .advantage__subTitle {
     font-size: 1.25rem;
   }
 }
 @media (max-width: 29.99875em) {
-  .advantage__title {
+  .advantage__subTitle {
     font-size: 1.125rem;
   }
 }
@@ -556,17 +612,38 @@ h6 {
 .compound {
   background: -webkit-linear-gradient(0deg, #fee1e9, #edd5e1, #d4eaee);
   background: linear-gradient(0deg, #fee1e9, #edd5e1, #d4eaee);
-  padding-top: 3.75rem;
-  padding-bottom: 3.75rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 @media (max-width: 47.99875em) {
   .compound {
-    padding-top: 2.5rem;
+    padding-top: 1.25rem;
+  }
+}
+.compound__title {
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-size: 2.375rem;
+  line-height: 1.1176470588;
+  font-weight: 600;
+}
+@media (max-width: 47.99875em) {
+  .compound__title {
+    font-size: 1.875rem;
+    line-height: 1.6666666667;
+    margin-bottom: 1.25rem;
+  }
+}
+@media (max-width: 573px) {
+  .compound__title {
+    font-size: 1.5rem;
+    line-height: 1;
   }
 }
 @media (max-width: 29.99875em) {
-  .compound {
-    padding-top: 1.25rem;
+  .compound__title {
+    font-size: 1.375rem;
+    line-height: 1;
   }
 }
 .compound__block {
@@ -617,15 +694,15 @@ h6 {
 }
 
 .howUse {
-  background: -webkit-linear-gradient(180deg, #fee1e9, #8592d8, #aecd46);
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  background: -webkit-linear-gradient(180deg, #fee1e9, #d4eaee);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(180deg, #fee1e9, #8592d8, #aecd46);
+  background: linear-gradient(180deg, #fee1e9, #d4eaee);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .howUse__title {
-  color: #593257;
-  text-shadow: 0 0 5px rgba(71, 67, 67, 0.438);
-  padding-top: 2.5rem;
+  margin-bottom: 2.5rem;
   text-align: center;
   font-size: 2.375rem;
   line-height: 1.1176470588;
@@ -635,6 +712,7 @@ h6 {
   .howUse__title {
     font-size: 1.875rem;
     line-height: 1.6666666667;
+    margin-bottom: 1.25rem;
   }
 }
 @media (max-width: 573px) {
@@ -645,12 +723,11 @@ h6 {
 }
 @media (max-width: 29.99875em) {
   .howUse__title {
-    font-size: 1.25rem;
+    font-size: 1.375rem;
     line-height: 1;
   }
 }
 .howUse__block {
-  margin-top: 2.5rem;
   display: flex;
   gap: 40px;
   justify-content: space-around;
@@ -717,8 +794,34 @@ h6 {
 }
 
 .choise {
-  margin-top: 3.75rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.choise__title {
   margin-bottom: 2.5rem;
+  text-align: center;
+  font-size: 2.375rem;
+  line-height: 1.1176470588;
+  font-weight: 600;
+}
+@media (max-width: 47.99875em) {
+  .choise__title {
+    font-size: 1.875rem;
+    line-height: 1.6666666667;
+    margin-bottom: 1.25rem;
+  }
+}
+@media (max-width: 573px) {
+  .choise__title {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+}
+@media (max-width: 29.99875em) {
+  .choise__title {
+    font-size: 1.375rem;
+    line-height: 1;
+  }
 }
 .choise__block {
   margin: 0 10px;
@@ -786,14 +889,37 @@ h6 {
 
 .review {
   background: url("../img/reviewbg.jpg") 0 0 no-repeat;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
-.review__block {
-  padding: 5rem 1.25rem 3.75rem 1.25rem;
+.review__mainTitle {
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-size: 2.375rem;
+  line-height: 1.1176470588;
+  font-weight: 600;
 }
 @media (max-width: 47.99875em) {
-  .review__block {
-    padding: 2.5rem 1.25rem 2.5rem 1.25rem;
+  .review__mainTitle {
+    font-size: 1.875rem;
+    line-height: 1.6666666667;
+    margin-bottom: 1.25rem;
   }
+}
+@media (max-width: 573px) {
+  .review__mainTitle {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+}
+@media (max-width: 29.99875em) {
+  .review__mainTitle {
+    font-size: 1.375rem;
+    line-height: 1;
+  }
+}
+.review__block {
+  padding: 0 1.25rem;
 }
 .review__slide {
   display: flex;
