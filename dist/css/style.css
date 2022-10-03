@@ -882,11 +882,7 @@ h6 {
 .review {
   background: url("../img/reviewbg.jpg") 0 0 no-repeat;
   padding: 2.5rem 1.25rem;
-<<<<<<< HEAD
   background-size: 100% !important;
-=======
-  background-size: 100%;
->>>>>>> 790299270f779565c3ee00f3a77f5be9f43a9993
 }
 .review__mainTitle {
   margin-bottom: 2.5rem;
