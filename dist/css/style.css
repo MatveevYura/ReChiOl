@@ -220,8 +220,7 @@ h6 {
 }
 */
 .footer {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding: 2.5rem 1.25rem;
 }
 .footer__title {
   text-align: center;
@@ -277,7 +276,7 @@ h6 {
   flex-direction: column;
   align-items: flex-start;
   margin-top: 11.25rem;
-  margin-left: 3.125rem;
+  margin-left: 5.625rem;
   max-width: 50%;
 }
 @media (max-width: 61.99875em) {
@@ -400,10 +399,7 @@ h6 {
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(180deg, #e7e5e6, #9bf6c8, #59d2f4);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-.problem__block {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding: 2.5rem 1.25rem;
 }
 .problem__title {
   margin-bottom: 2.5rem;
@@ -492,8 +488,7 @@ h6 {
 
 .advantage {
   position: relative;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding: 2.5rem 1.25rem;
 }
 .advantage__img-texture {
   position: absolute;
@@ -612,8 +607,7 @@ h6 {
 .compound {
   background: -webkit-linear-gradient(0deg, #fee1e9, #edd5e1, #d4eaee);
   background: linear-gradient(0deg, #fee1e9, #edd5e1, #d4eaee);
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding: 2.5rem 1.25rem;
 }
 @media (max-width: 47.99875em) {
   .compound {
@@ -666,8 +660,8 @@ h6 {
   }
 }
 .compound__text {
-  font-size: 1.5rem;
-  line-height: 1;
+  font-size: 1.75rem;
+  line-height: 1.1666666667;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -694,8 +688,7 @@ h6 {
 }
 
 .howUse {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding: 2.5rem 1.25rem;
   background: -webkit-linear-gradient(180deg, #fee1e9, #d4eaee);
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(180deg, #fee1e9, #d4eaee);
@@ -794,8 +787,7 @@ h6 {
 }
 
 .choise {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding: 2.5rem 1.25rem;
 }
 .choise__title {
   margin-bottom: 2.5rem;
@@ -889,8 +881,7 @@ h6 {
 
 .review {
   background: url("../img/reviewbg.jpg") 0 0 no-repeat;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding: 2.5rem 1.25rem;
 }
 .review__mainTitle {
   margin-bottom: 2.5rem;
@@ -1028,8 +1019,7 @@ h6 {
 }
 
 .work {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding: 2.5rem 1.25rem;
 }
 .work__title {
   margin-bottom: 2.5rem;
@@ -1059,7 +1049,7 @@ h6 {
 .work__block {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0 20px;
 }
 @media (max-width: 61.99875em) {
@@ -1110,10 +1100,9 @@ h6 {
 }
 
 .form {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding: 2.5rem 1.25rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 @media (max-width: 47.99875em) {

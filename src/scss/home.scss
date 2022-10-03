@@ -28,7 +28,7 @@
     flex-direction: column;
     align-items: flex-start;
     margin-top: rem(180);
-    margin-left: rem(50);
+    margin-left: rem(90);
     max-width: 50%;
     @media (max-width:$tablet){
       margin-top: rem(120);
@@ -134,10 +134,9 @@ align-self: center;
 
 .problem {
   background: -webkit-linear-gradient(180deg, #e7e5e6,#9bf6c8,#59d2f4);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(180deg, #e7e5e6,#9bf6c8,#59d2f4);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+  padding: rem(40) rem(20);
   // .problem__block
   &__block {
-    padding-top: rem(40);
-    padding-bottom: rem(40);
   }
   &__title{
     margin-bottom: rem(40);
@@ -217,8 +216,7 @@ align-self: center;
 
 .advantage {
   position: relative;
-  padding-top: rem(40);
-  padding-bottom: rem(40);
+  padding: rem(40) rem(20);
   // .advantage__img-texture
   &__img-texture {
     position: absolute;
@@ -326,8 +324,7 @@ align-self: center;
 .compound {
   background: -webkit-linear-gradient(0deg, #fee1e9,#edd5e1,#d4eaee);
   background: linear-gradient(0deg, #fee1e9,#edd5e1,#d4eaee);
-  padding-top: rem(40);
-  padding-bottom: rem(40);
+  padding: rem(40) rem(20);
   @media (max-width:$mobile){
     padding-top: rem(20); 
   }
@@ -370,8 +367,8 @@ align-self: center;
   }
   // .compound__text
   &__text {
-    font-size: rem(24);
-    line-height: math.div(24 , 24);
+    font-size: rem(28);
+    line-height: math.div(28 , 24);
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -395,8 +392,8 @@ align-self: center;
 //========================================================================================================================================================
 
 .howUse {
-  padding-top: rem(40);
-  padding-bottom: rem(40);
+  padding: rem(40) rem(20);
+
   background: -webkit-linear-gradient(180deg, #fee1e9,#d4eaee);
   /* Chrome 10-25, Safari 5.1-6 */                          
   background: linear-gradient(180deg, #fee1e9,#d4eaee);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
@@ -490,8 +487,8 @@ align-self: center;
 //========================================================================================================================================================
 
 .choise {
-  padding-top: rem(40);
-  padding-bottom: rem(40);
+  padding: rem(40) rem(20);
+
   &__title{
     margin-bottom: rem(40);
     text-align: center;
@@ -568,8 +565,8 @@ align-self: center;
 
 .review {
   background: url('@img/reviewbg.jpg') 0 0 no-repeat;
-  padding-top: rem(40);
-  padding-bottom: rem(40);
+  padding: rem(40) rem(20);
+
   &__mainTitle{
     margin-bottom: rem(40);
     text-align: center;
@@ -704,8 +701,8 @@ align-self: center;
 }
 
 .work {
-  padding-top: rem(40);
-  padding-bottom: rem(40);
+  padding: rem(40) rem(20);
+
   // .work__title
   &__title {
     margin-bottom: rem(40);
@@ -730,7 +727,7 @@ align-self: center;
   &__block {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 20px;
     @media (max-width:$tablet){
       flex-direction: column;
@@ -782,10 +779,10 @@ align-self: center;
 //========================================================================================================================================================
 
 .form {
-  padding-top: rem(40);
-  padding-bottom: rem(40);
+  padding: rem(40) rem(20);
+
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   @media (max-width:$mobile){
      flex-direction: column; 
